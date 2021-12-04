@@ -1,0 +1,77 @@
+*
+    box-sizing: border-box
+
+
+*::before,
+*::after 
+    box-sizing: border-box
+
+body 
+    font-family: 'Poppins', sans-serif
+    font-weight: 400
+
+
+img 
+    max-width: 100%
+
+
+.list-reset 
+    margin: 0
+    padding: 0
+    list-style-type: none
+
+
+.btn-reset 
+    padding: 0
+    border: none
+    font-family: 'Poppins', sans-serif
+    background-color: transparent
+    cursor: pointer
+
+.container
+    max-width: 1140px
+    padding: 0 15px
+    margin: 0 auto
+
+.header
+    position: absolute
+    left: 0
+    top: 0
+    padding: 24px 0
+    width: 100%
+    &-container
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+
+.burger
+    --padding-horizontal: 11px
+    --padding-vertical: 14px
+    position: relative
+    border-radius: 100%
+    padding: var(--padding-vertical) var(--padding-horizontal)
+    width: 40px
+    height: 40px
+    background-color: #f5f6f7
+    &-line 
+        position: absolute
+        left: 50%
+        top: var(--padding-vertical)
+        display: inline-block
+        width: calc(100% - (var(--padding-horizontal)*2))
+        height: 2px
+        background-color: #000
+        transform: translateX(-50%)
+        &:nth-child(2)
+            top: calc(var(--padding-vertical) + 6px)
+        &:nth-child(3)
+            top: calc(var(--padding-vertical) + 12px)
+        
+
+.hero
+    padding-top: 100px
+    background-image: url("../img/hero-bg.jpg")
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
