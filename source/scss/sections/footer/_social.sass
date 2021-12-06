@@ -1,0 +1,31 @@
+.social
+    display: flex
+    align-items: center
+    &-link
+        display: block
+        border-radius: 100%
+        width: 33px
+        height: 33px
+        background-color: #1a3b94
+        background-position: center
+        background-size: 18px auto
+        opacity: 0.4
+        transition: opacity 0.3s ease-in-out
+        &:hover
+            opacity: 1
+        &-icon
+            display: flex
+            align-items: center
+            justify-content: center
+            color: #fff
+            font-weight: 700
+            font-size: 16px
+    &-item:not(:last-child)
+        margin-right: 11px
+.action
+    opacity: 1
+
+.copyright
+    font-style: 14px
+    line-height: 21px
+    color: #1a3b94
