@@ -1,0 +1,22 @@
+.burger
+    --padding-horizontal: 11px
+    --padding-vertical: 14px
+    position: relative
+    border-radius: 100%
+    padding: var(--padding-vertical) var(--padding-horizontal)
+    width: 40px
+    height: 40px
+    background-color: #f5f6f7
+    &-line 
+        position: absolute
+        left: 50%
+        top: var(--padding-vertical)
+        display: inline-block
+        width: calc(100% - (var(--padding-horizontal)*2))
+        height: 2px
+        background-color: #000
+        transform: translateX(-50%)
+        &:nth-child(2)
+            top: calc(var(--padding-vertical) + 6px)
+        &:nth-child(3)
+            top: calc(var(--padding-vertical) + 12px)
