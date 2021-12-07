@@ -471,4 +471,14 @@ ul, li, a {
   line-height: 21px;
   color: #1a3b94;
 }
+
+@media (max-width: 992px) {
+  .services-list {
+    display: -ms-grid;
+    display: grid;
+    gap: 50px;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
 /*# sourceMappingURL=main.css.map */
